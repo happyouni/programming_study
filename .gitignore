@@ -1,0 +1,32 @@
+# 1. 기본적으로 모든 파일 무시
+*
+
+# 2. 하위 폴더 안으로 들어갈 수 있게 허용
+!*/
+
+# 3. .gitignore 파일 자체는 허용
+!.gitignore
+
+# 4. README 파일 허용
+!README.md
+!readme.md
+
+# 5. C 언어 소스 파일 허용
+!*.c
+!*.h
+!*.txt
+
+# 6. Java 소스 파일 허용
+!*.java
+!**/src/**
+
+# 7. Python 소스 파일 허용
+!*.py
+
+# 8. SQL 파일 허용
+!*.sql
+
+# 9. 웹 소스 파일 허용
+!*.html
+!*.css
+!*.js
