@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CSS 선택자</title>
+    
+    <style>
+        /* 1.  전체 선택자 : 웹 페이지 내부의 '모든 태그'를 통째로 선택합니다. */
+        * { 
+            margin: 0;           
+            padding: 0; 
+        }
+        
+        /* 2. 태그(명시적) 선택자: 모든 p 태그에 기본 적용 */
+        p {
+            color: gray;
+            font-size: 14px;
+        }
+
+        /* 3. 클래스 선택자 (기호: 점 '.') - 중복 사용 가능 */
+        .blue-text {
+            color: blue;
+            font-weight: bold;
+        }
+
+        /* 4. 아이디 선택자 (기호: 샵 '#') - 단 하나만 사용 가능 */
+        #special-text {
+            color: red;
+            font-size: 20px;
+            background-color: yellow;
+        }
+
+        /* 5. 반응 선택자 */
+        /* ★시험 필수 암기 순서: link -> visited -> hover -> active (루이비통샤넬로 외우면 편함) */
+        a:link {
+            color: purple;
+            text-decoration: none;
+        }
+        a:visited {
+            color: green;
+        }
+        a:hover {
+            color: orange;
+            text-decoration: underline;
+        }
+        a:active {
+            color: red;
+        }    </style>
+</head>
+<body>
+    <h2>CSS 실습</h2>
+    
+    <p>이것은 일반 태그 선택자가 적용되어 회색으로 보입니다.</p>
+    
+    <p class="blue-text">이것은 클래스 선택자(.blue-text)가 적용되어 파란색입니다.</p>
+    
+    <p id="special-text">이것은 아이디 선택자(#special-text)가 적용되어 가장 강력하게 빨간색+노란배경이 됩니다!</p>
+
+    <p style="color: green; font-style: italic;">이것은 인라인 스타일로 초록색 이탤릭체로 바뀝니다.</p>
+
+    <h3>[테스트] 아래 링크에 마우스를 올리거나 눌러보세요</h3>
+    <a href="https://www.naver.com" target="_blank">네이버로 이동하기 링크</a>
+</body>
+</html>

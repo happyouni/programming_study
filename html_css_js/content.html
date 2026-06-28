@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>HTML 실습</title>
+</head>
+<body>
+    <h1>가장 큰 제목 (h1)</h1>
+    <h3>중간 크기 제목 (h3)</h3>
+    <h6>가장 작은 제목 (h6)</h6>
+
+    프로그래밍 기능사 필기 <br> 
+    <hr>
+    <p>공백 세칸: &nbsp; &nbsp; &nbsp; 끝 </p>
+    <p>태그 기호 표시: &lt; html &gt; </p>
+
+    <h3>순서 없는 목록 (ul)</h3>
+    <ul>
+        <li>C언어</li>
+        <li>자바</li>
+    </ul>
+    <ul type = " square">
+        <li>파이썬</li>
+        <li>SQL </li>
+    </ul>
+
+    <h3>순서 있는 목록 (ol)</h3>
+    <ol start="1" type="I">
+        <li>데이터베이스</li>
+        <li>웹프로그래밍</li>
+    </ol>
+
+    <h3>표 만들기 (colspan, rowspan)</h3>
+    <table border="1">
+        <tr>
+            <th>1열</th>
+            <th>2열</th>
+            <th>3열</th>
+        </tr>
+        <tr>
+            <td colspan="2">가로 2칸(옆으로 2칸) 병합(colspan)</td>
+            <td>3번방</td>
+        </tr>
+        <tr>
+            <td rowspan="2">세로 2칸(위아래 2칸) <br>병합(rowspan)</td>
+            <td>A방</td>
+            <td>B방</td>
+        </tr>
+        <tr>
+            <td>C방</td>
+            <td>D방</td>
+        </tr>
+    </table>
+
+    <h3>링크와 이미지</h3>
+    <a href="https://www.google.com" target="_blank">구글(새창열기)</a><br>
+    <img src="sample.jpg" width="100" height="100" title="이미지 설명 툴팁">
+
+    <h3>폼과 입력 양식 (form & input)</h3>
+    <form action="submit.jsp" method="post">
+        
+        <label for="userId">아이디: </label>
+        <input type="text" id="userId" name="userId" value="guest"><br><br>
+
+        <label for="userPw">비밀번호: </label>
+        <input type="password" id="userPw" name="userPw"><br><br>
+
+        개인정보 동의: 
+        <input type="radio" id="agree" name="privacy" value="Y" checked>
+        <label for="agree">동의</label>
+        <input type="radio" id="disagree" name="privacy" value="N">
+        <label for="disagree">비동의</label><br><br>
+
+        관심 분야: 
+        <input type="checkbox" id="lang1" name="hobby" value="HTML">
+        <label for="lang1">HTML</label>
+        <input type="checkbox" id="lang2" name="hobby" value="CSS">
+        <label for="lang2">CSS</label><br><br>
+
+        <input type="button" value="중복확인">
+        <input type="reset" value="초기화">
+        <input type="submit" value="전송하기">
+
+    </form>
+</body>
+</html>
